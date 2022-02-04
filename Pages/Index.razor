@@ -1,0 +1,8 @@
+﻿@page "/"
+
+@inject NavigationManager NavigationManager
+
+<PageTitle>Index</PageTitle>
+
+<MudButton OnClick="@(() => NavigationManager.NavigateTo("snackbar"))">Navigate to Snackbar Page</MudButton>
+<MudButton OnClick="@(() => NavigationManager.NavigateTo("snackbar", true))">Navigate to Snackbar Page, with forceLoad</MudButton>

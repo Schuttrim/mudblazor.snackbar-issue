@@ -1,0 +1,13 @@
+﻿@page "/snackbar"
+@inject ISnackbar Snackbar
+
+
+<PageTitle>Snackbar is displayed here</PageTitle>
+
+@code {
+    protected override void OnInitialized()
+    {
+        Snackbar.Add("Foo", Severity.Info);
+    }
+
+}
